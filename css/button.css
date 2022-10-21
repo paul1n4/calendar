@@ -52,6 +52,19 @@
   padding: .5rem;
 }
 
+.button.is-extended {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--body1-medium);
+  border-radius: 0;
+  inline-size: 100%;
+}
+
+.button.is-extended:active {
+  transform: scale(1);
+}
+
 .button i {
   font-size: 1.5rem;
   color: var(--gray50);

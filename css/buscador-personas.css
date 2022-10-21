@@ -1,0 +1,30 @@
+.buscadorPersonas {
+  background: var(--gray10);
+  border-radius: 0.25rem;
+  max-inline-size: 12.25rem;
+}
+
+.buscador {
+  border: 0;
+  background: var(--gray10);
+  padding-inline-start: 1rem;
+  padding-block-start: 0.625rem;
+  padding-block-end: 0.625rem;
+  padding-inline-end: 3rem;
+  border-radius: 0.25rem;
+}
+
+.buscador::placeholder {
+  font: var(--body1-regular);
+  color: var(--gray20);
+  background-image: url(../icons/icon-users.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1rem;
+  padding-block-start: 0.625rem;
+  padding-block-end: 0.625rem;
+}
+
+.buscador:focus {
+  outline: none;
+}
