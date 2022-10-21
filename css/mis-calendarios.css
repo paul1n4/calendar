@@ -1,12 +1,24 @@
 /* .misCalendarios {
 }
  */
- 
-/* .misCalendarios-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
+.misCalendarios-header {
+  width: 15.25rem;
+}
+
+.misCalendarios-header:hover {
+  background: var(--gray10);
+}
+
+.buttonWrapper {
+  width: 12.25rem;
+  margin: auto;
+}
+
+.misCalendarios-lists {
+  width: 12.25rem;
+  margin: 0.5rem auto;
+}
 
 .misCalendarios-list {
   font: var(--body1-regular);

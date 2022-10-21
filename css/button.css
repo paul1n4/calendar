@@ -31,16 +31,15 @@
 }
 
 .button:hover,
-.button:focus,
+.button:focus-visible,
 .button.is-secondary:hover,
-.button.is-secondary:focus,
+.button.is-secondary:focus-visible,
 .button.is-rounded:hover,
-.button.is-rounded:focus, 
+.button.is-rounded:focus-visible, 
 .button.is-compact:hover,
-.button.is-compact:focus {
+.button.is-compact:focus-visible {
   background: var(--gray10);
 }
-
 
 .button.is-rounded {
   border-radius: 1.25rem;
@@ -58,7 +57,9 @@
   align-items: center;
   font: var(--body1-medium);
   border-radius: 0;
-  inline-size: 100%;
+  padding-inline: 0;
+  padding-block: 0.3rem;
+  width: 100%;
 }
 
 .button.is-extended:active {

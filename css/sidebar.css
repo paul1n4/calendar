@@ -1,0 +1,12 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.sidebar-createEvent {
+  align-self: flex-start;
+  margin-inline-start: 1.5rem;
+  margin-block-start: 1.5rem;
+}
