@@ -122,17 +122,17 @@
       </div>
       <div class="buscadorPersonas">
         <!-- <i class="icon-users"></i> -->
-        <input class="buscador" placeholder="        Buscar personas">
+        <input type="text" placeholder="        Buscar personas">
       </div>
 
       <div class="misCalendarios">
         <div class="misCalendarios-header">
-          <div class="buttonWrapper">
-            <button class="button is-extended">
+          <button class="button is-extended">
+              <div class="buttonWrapper">
               <span>Mis calendarios</span>
               <i class="icon-chevronUp"></i>
+            </div>
             </button>
-          </div>
         </div>
         <div class="misCalendarios-lists">
           <div class="misCalendarios-list">
@@ -526,40 +526,55 @@
     </main>
   </div>
   <dialog class="modal">
-    <form>
-      <div class="input">
-        <input required name="title" type="text" placeholder="Añade un título">
+    <form class="createTask">
+      <div class="input is-outstanding">
+        <div class="input-body">
+          <input required name="title" type="text" placeholder="Añade un título">
+        </div>
       </div>
       <div class="input">
-        <input type="date" name="date" required>
-      </div>
-      <div class="input">
-        <input type="time" name="time-start" required>
-      </div>
-      <div class="input">
-        <input type="time" name="time-end" required>
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
       </div>
 
       <div class="input">
-        <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
-        <datalist id="guests">
-          <option value="Leonidas"></option>
-          <option value="Carlos"></option>
-          <option value="Miguel"></option>
-          <option value="Sandra"></option>
-          <option value="Cristopher"></option>
-        </datalist>
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
+          <datalist id="guests">
+            <option value="Leonidas"></option>
+            <option value="Carlos"></option>
+            <option value="Miguel"></option>
+            <option value="Sandra"></option>
+            <option value="Cristopher"></option>
+          </datalist>
+        </div>
       </div>
+      
       <div class="input">
-        <input name="location" type="text" placeholder="Agregar ubicación">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input name="location" type="text" placeholder="Agregar ubicación">
+        </div>
       </div>
+
       <div class="input">
-        <input type="file" multiple>
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple>
+        </div>
       </div>
+
       <div class="input">
-        <textarea name="description" placeholder="Agregar descripción" id="" cols="40" rows="5"></textarea>
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripción" id="" cols="40" rows="2"></textarea>
+        </div>
       </div>
-      <input type="submit">
     </form>
     <div class="modal-actions">
       <button class="button">
@@ -569,7 +584,7 @@
         Guardar
       </button>
     </div>
-  </dialog>
+  </>
   <script>
     document.querySelector('.modal').showModal()
   </script>

@@ -6,13 +6,17 @@
   width: 15.25rem;
 }
 
-.misCalendarios-header:hover {
+.misCalendarios-header:hover,
+.misCalendarios-header:focus-visible {
   background: var(--gray10);
 }
 
 .buttonWrapper {
   width: 12.25rem;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .misCalendarios-lists {

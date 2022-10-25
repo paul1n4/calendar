@@ -52,9 +52,6 @@
 }
 
 .button.is-extended {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font: var(--body1-medium);
   border-radius: 0;
   padding-inline: 0;
