@@ -8,6 +8,7 @@
   inset-block-start: 0;
   background: var(--white);
   border-block-end: 1px solid currentColor;
+  z-index: 2;
 }
 
 .calendarDay a {

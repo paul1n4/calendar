@@ -2,6 +2,17 @@
   border-inline-start: 1px solid currentColor;
   border-block-end: 1px solid currentColor;
   padding: .25rem;
+  position: relative;
+}
+
+.taskCell.is-last::before {
+  content: '';
+  inline-size: 1px;
+  block-size: 1rem;
+  background: currentColor;
+  position: absolute;
+  inset-block-end: -1rem;
+  inset-inline-start: -1px;
 }
 
 /* .taskCell:nth-child(8n) {
