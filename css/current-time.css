@@ -3,7 +3,7 @@
   background: var(--red10);
   inline-size: 5rem;
   position: absolute;
-  inset-inline-start: 150px;
+  inset-inline-start: 70px;
   inset-block-start: 200px;
   z-index: 2;
 }
@@ -16,4 +16,9 @@
   background: var(--red10);
   border-radius: 50%;
   transform: translateY(-50%);
+}
+
+.currentTime.is-wide {
+  width: 90%;
+
 }

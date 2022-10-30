@@ -11,6 +11,10 @@
   z-index: 2;
 }
 
+.calendarDay.is-byDay {
+  align-items: flex-start;
+}
+
 .calendarDay a {
   text-decoration: none;
   color: currentColor;
@@ -42,7 +46,7 @@
 .calendarDay::before {
   content: '';
   inline-size: 1px;
-  block-size: 2rem;
+  block-size: 1.625rem;
   background: currentColor;
   position: absolute;
   inset-block-end: 0;
