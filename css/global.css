@@ -27,10 +27,20 @@ body {
   background: var(--white);
 }
 
+.logo img:nth-of-type(2){
+  display: none;
+}
+
 @media screen and (prefers-color-scheme: dark) {
   :root {
     --gray50: #fffffe;
     --gray20: #c1c1c1;
     --white: #222222;
+  }
+  .logo img:first-of-type{
+    display: none;
+  }
+  .logo img:nth-of-type(2){
+    display: inline;
   }
 }
